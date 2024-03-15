@@ -1,0 +1,11 @@
+﻿@model WebNewsTest.Models.NewsItem
+
+<h2>Добавить новость</h2>
+
+<form asp-controller="News" asp-action="Add" method="post">
+    <label for="Title">Заголовок:</label><br>
+    <input type="text" id="Title" name="Title"><br>
+    <label for="Content">Содержание:</label><br>
+    <textarea id="Content" name="Content"></textarea><br>
+    <button type="submit">Добавить новость</button>
+</form>
